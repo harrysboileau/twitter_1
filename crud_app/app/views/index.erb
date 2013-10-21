@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Here's the CRUD index view!</h1>
+  
+  <% @people.each do |person| %>
+    <a href='/people/<%= person.id %>'><%= person.name %></a><br><br>
+  <% end %>
+
+  <a href="/people/new">Create a new person?</a>
+  
+</div>
